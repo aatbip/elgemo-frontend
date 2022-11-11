@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 const Main = () => {
   const styles = {
     containerStyle: {
-      marginTop: "180px",
+      marginTop: "60px",
     },
   };
 

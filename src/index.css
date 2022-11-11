@@ -30,11 +30,11 @@
 
 .chat-box-wrapper {
   width: 100%;
-  min-height: 65vh;
+  min-height: 60vh;
   border: 5px solid #232020;
   margin-top: 10px;
   padding: 10px 10px;
-  max-height: 65vh;
+  max-height: 60vh;
   overflow-y: scroll;
 }
 
@@ -51,22 +51,31 @@
   flex-direction: row;
 }
 
-.input-box-wrapper input {
-  width: 90%;
-  height: 50px;
+.input-box-wrapper textarea {
+  width: 95%;
+  height: 80px;
   padding: 10px 10px;
   resize: none;
   font-family: "Dosis", sans-serif;
   font-size: 14px;
+  overflow-y: scroll;
 }
 
 .input-box-wrapper input[type="submit"],
-.input-box-wrapper button,
-.enter-button {
-  width: 140px;
-  height: 50px;
+.input-box-wrapper button{
+  width: 80px;
+  height: 80px;
   background-color: #232020;
   color: white;
+  font-size: 14px;
+}
+
+.enter-button {
+  width: 120px; 
+  height: 50px; 
+  background-color: #232020;
+  color: white;
+  font-size: 14px;
 }
 
 
