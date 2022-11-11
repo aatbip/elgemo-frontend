@@ -51,14 +51,15 @@
   flex-direction: row;
 }
 
-.input-box-wrapper textarea {
+.input-box-wrapper input {
   width: 95%;
   height: 80px;
   padding: 10px 10px;
   resize: none;
   font-family: "Dosis", sans-serif;
   font-size: 14px;
-  overflow-y: scroll;
+  overflow-y:hidden;
+  overflow-x: hidden;
 }
 
 .input-box-wrapper input[type="submit"],

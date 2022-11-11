@@ -120,10 +120,10 @@ const Chat = () => {
             LEAVE
           </button>
           <form onSubmit={sendMessage}>
-            <textarea
+            <input
               onChange={(e) => handleChange(e)}
               value={message}
-              type="text"
+              type="input"
             />
             <input
               value="Send"
