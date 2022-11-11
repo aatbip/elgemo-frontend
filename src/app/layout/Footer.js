@@ -8,7 +8,7 @@ const Footer = () => {
       bottom: 0,
       right: 0,
       background: "#232020",
-      padding: "5px 10px",
+      padding: "5px 15px",
       width: "100%",
     },
     textStyle: {
