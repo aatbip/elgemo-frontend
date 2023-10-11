@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import {
   setRoom,
@@ -21,6 +21,7 @@ const Main = () => {
 
   const { socket } = useSelector((store) => store.socket);
 
+
   /**
    * This hook receives the "notification", "room" and "total" events.
    */
@@ -36,7 +37,9 @@ const Main = () => {
     socket.on("total", (value) => {
       dispatch(setTotal(value));
     });
+
   }, [socket]);
+
 
   /**
    * This function is function that connects to the socket.
@@ -59,6 +62,7 @@ const Main = () => {
     return;
   };
 
+
   /**
    * This hook listens to the keydown event for ESC key.
    */
@@ -77,6 +81,9 @@ const Main = () => {
   React.useEffect(() => {
     dispatch(resetChat());
   }, []);
+
+  if (!socket) return <></>
+
 
   return (
     <div style={styles.containerStyle} className="container">

@@ -6,7 +6,7 @@ import Main from "./app/Main/Main";
 export default function Router() {
   return useRoutes([
     {
-      path: "/",
+      path: "",
       element: <Layout />,
       children: [
         { path: "", element: <Main /> },
